@@ -1,5 +1,5 @@
 'use client'
-// components/TableComponent.js
+
 import React, { useMemo } from 'react';
 import { useTable } from 'react-table';
 
@@ -8,7 +8,7 @@ const TableComponent = () => {
     () => [
       { name: 'Maurice Molande', age: 25, email: 'mau.molande@gmail.com' },
       { name: 'Nohata Molande', age: 30, email: 'nohata.molande@gmail.com' },
-      // Add more data as needed
+      
     ],
     []
   );
@@ -22,7 +22,7 @@ const TableComponent = () => {
     []
   );
 
-  // Create an instance of the useTable hook
+  // An instance of the useTable hook
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } = useTable({ columns, data });
 
   return (
